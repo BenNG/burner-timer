@@ -1,6 +1,6 @@
 # burner-timer
 
-__COMPONENT DESCRIPTION GOES HERE__
+Yet another timer component in React
 
 
 ## Demo & Examples
@@ -30,22 +30,29 @@ npm install burner-timer --save
 
 ## Usage
 
-__EXPLAIN USAGE HERE__
-
 ```
-var BurnerTimer = require('burner-timer');
+import BurnerTimer from 'burner-timer';
 
-<BurnerTimer>Example</BurnerTimer>
+let timerProps = {
+	totalTime: 20 * 1000, // ms
+	consumedTime : 2000, // ms
+	progressColor: '#5c6bc0',
+	size: 120,
+	/*textToDisplay: 'BlaBla',*/
+};
+
+<BurnerTimer {...timerProps}/>
 ```
 
 ### Properties
 
-* __DOCUMENT PROPERTIES HERE__
+* totalTime: 20 * 1000, // ms
+* consumedTime : 2000, // ms
+* progressColor: '#5c6bc0',
+* size: 120,
+* /*textToDisplay: 'BlaBla',*/
 
-### Notes
-
-__ADDITIONAL USAGE NOTES__
-
+Live demo: [BenNG.github.io/burner-timer](http://BenNG.github.io/burner-timer/)
 
 ## Development (`src`, `lib` and the build process)
 
