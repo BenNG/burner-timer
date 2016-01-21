@@ -1,0 +1,29 @@
+{
+  "name": "burner-timer",
+  "version": "0.0.0",
+  "description": "burner-timer",
+  "main": "dist/burner-timer.min.js",
+  "homepage": "https://github.com/BenNG/burner-timer",
+  "authors": [
+    "BenNG"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "react",
+    "react-component"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "src",
+    "node_modules",
+    "example",
+    "test"
+  ]
+}
