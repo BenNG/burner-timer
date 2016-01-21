@@ -1,6 +1,6 @@
 {
   "name": "burner-timer",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "burner-timer",
   "main": "lib/BurnerTimer.js",
   "author": "BenNG",
