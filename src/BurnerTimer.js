@@ -20,12 +20,11 @@ var BurnerTimer = React.createClass({
 		let x = size;
 		let y = size;
 
-		if (!totalTime || !consumedTime){
+		if ( !totalTime || ( !consumedTime && consumedTime !== 0 ) ){
 			return;
 		}
-
-		// compute
-		let percentageConsumed = consumedTime / totalTime;
+		
+		let percentageConsumed = consumedTime ? (consumedTime / totalTime) : 0;
 		degrees = 3.6 * (percentageConsumed * 100);
 		textToDisplay = textToDisplay || (totalTime - Math.floor(consumedTime)) / 1000;
 		
