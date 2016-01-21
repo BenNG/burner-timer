@@ -7,7 +7,7 @@ let drawCoord = (x, radius, degrees) => {
     let rY = radius + offset - Math.cos(radians) * radius;
 
 	if(!rX || !rY){
-		return "";
+		return '';
 	}
 	
     let dir = (degrees > 180) ? 1 : 0;

@@ -4,8 +4,11 @@ import {drawCoord} from './utils/timer';
 
 var BurnerTimer = React.createClass({
 	propTypes: {
+		consumedTime: PropTypes.number.isRequired, // in ms
+		progressColor: PropTypes.string,
+		size: PropTypes.number.isRequired,
+		textToDisplay: PropTypes.string,
 		totalTime: PropTypes.number.isRequired, // in ms
-		consumedTime: PropTypes.number.isRequired // in ms
 	},
 	render(){
 
@@ -49,7 +52,7 @@ var BurnerTimer = React.createClass({
 
 				<text ref="textValue" x={x} y={y + 10} textAnchor="middle" fill="#fff"
 					  style={{fontSize:24, fontFamily:'Arial'}}>
-					{textToDisplay || ""}
+					{textToDisplay || ''}
 				</text>
 
 			</svg>
