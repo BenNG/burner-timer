@@ -26,7 +26,7 @@ var BurnerTimer = React.createClass({
 		
 		let percentageConsumed = consumedTime ? (consumedTime / totalTime) : 0;
 		degrees = 3.6 * (percentageConsumed * 100);
-		textToDisplay = textToDisplay || (totalTime - Math.floor(consumedTime)) / 1000;
+		textToDisplay = textToDisplay || (Math.floor( (totalTime - consumedTime)/ 1000 ));
 		
 		return (
 
@@ -51,7 +51,7 @@ var BurnerTimer = React.createClass({
 
 				<text ref="textValue" x={x} y={y + 10} textAnchor="middle" fill="#fff"
 					  style={{fontSize:24, fontFamily:'Arial'}}>
-					{textToDisplay || ''}
+					{textToDisplay}
 				</text>
 
 			</svg>
