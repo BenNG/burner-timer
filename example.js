@@ -12,7 +12,7 @@ var App = React.createClass({
 
 		var timerProps = {
 			totalTime: 20 * 1000, // ms
-			consumedTime: 2000, // ms
+			consumedTime: 0, // ms
 			progressColor: '#5c6bc0',
 			size: 120
 		};
